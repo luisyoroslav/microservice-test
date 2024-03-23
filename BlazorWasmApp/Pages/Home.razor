@@ -3,10 +3,10 @@
 <PageTitle>Counter</PageTitle>
 
 <h1>Counter</h1>
-
+<MudThemeProvider />
 <MudText Typo="Typo.h1">MudBlazor is @Text</MudText>
 <MudButton Variant="Variant.Filled" Color="Color.Error" OnClick="ButtonOnClick">@ButtonText</MudButton>
-
+<MudAlert Severity="Severity.Warning">The reactor temperature exceeds the optimal range</MudAlert>
 @code {
     public string Text { get; set; } = "????";
     public string ButtonText { get; set; } = "Click Me Cacho 0";
